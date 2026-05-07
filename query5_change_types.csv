@@ -1,0 +1,6 @@
+SELECT
+"'Design Changes' AS change_type, SUM(design_changes) AS total FROM jira_data"
+UNION ALL
+"SELECT 'Config Changes', SUM(config_changes) FROM jira_data"
+UNION ALL
+"SELECT 'Store Changes', SUM(store_changes) FROM jira_data;"

@@ -1,0 +1,6 @@
+SELECT
+COUNT(*) AS complex_deployments
+FROM jira_data
+WHERE design_changes > 0
+AND config_changes > 0
+AND store_changes > 0; i have them all in one page

@@ -1,0 +1,17 @@
+SELECT
+"'iOS' AS platform, SUM(ios) AS total_deployments FROM jira_data"
+UNION ALL
+"SELECT 'Android', SUM(android) FROM jira_data"
+UNION ALL
+"SELECT 'Android TV', SUM(androidtv) FROM jira_data"
+UNION ALL
+"SELECT 'Fire TV', SUM(firetv) FROM jira_data"
+UNION ALL
+"SELECT 'Roku', SUM(roku) FROM jira_data"
+UNION ALL
+"SELECT 'Xbox', SUM(xbox) FROM jira_data"
+UNION ALL
+"SELECT 'tvOS', SUM(tvos) FROM jira_data"
+UNION ALL
+"SELECT 'Tizen', SUM(tizen) FROM jira_data"
+ORDER BY total_deployments DESC;

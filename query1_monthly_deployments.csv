@@ -1,0 +1,6 @@
+SELECT
+"SUBSTR(created_date, 1, 7) AS month,"
+COUNT(*) AS total_deployments
+FROM jira_data
+GROUP BY month
+ORDER BY month ASC;

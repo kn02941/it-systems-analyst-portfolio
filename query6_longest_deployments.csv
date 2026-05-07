@@ -1,0 +1,10 @@
+SELECT
+"key,"
+"created_date,"
+"total_duration,"
+"active_duration,"
+"num_of_apps,"
+(total_duration - active_duration) AS idle_time
+FROM jira_data
+ORDER BY total_duration DESC
+LIMIT 10;

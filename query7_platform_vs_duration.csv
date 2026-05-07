@@ -1,0 +1,7 @@
+SELECT
+"num_of_apps AS platforms_covered,"
+"COUNT(*) AS deployment_count,"
+"ROUND(AVG(total_duration), 1) AS avg_total_duration"
+FROM jira_data
+GROUP BY num_of_apps
+ORDER BY num_of_apps ASC;

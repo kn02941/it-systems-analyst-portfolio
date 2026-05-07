@@ -1,0 +1,8 @@
+SELECT
+"key,"
+"created_date,"
+"num_of_apps,"
+total_duration
+FROM jira_data
+ORDER BY num_of_apps DESC
+LIMIT 10;
